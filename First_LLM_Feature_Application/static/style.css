@@ -79,3 +79,11 @@ button:hover {
 .response tr:nth-child(even) {
     background: #fafafa;
 }
+
+.error {
+    margin-top: 20px;
+    padding: 12px;
+    color: #9b1c1c;
+    background: #fee2e2;
+    border-radius: 6px;
+}

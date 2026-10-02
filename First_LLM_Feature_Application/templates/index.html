@@ -33,7 +33,10 @@
             <button type="submit">Ask AI</button>
 
         </form>
-
+        
+        {% if error_message %}
+    <p class="error">{{ error_message }}</p>
+{% endif %}
         {% if response %}
             <h2>AI Response</h2>
 
