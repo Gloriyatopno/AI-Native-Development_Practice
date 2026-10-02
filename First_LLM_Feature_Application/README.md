@@ -2,6 +2,10 @@
 
 A simple Flask web application that integrates a Large Language Model (LLM) using the Groq API. Users can enter questions or requests and receive AI-generated responses directly on the webpage.
 
+## Live Demo
+
+https://ai-native-development-practice.onrender.com
+
 ## Features
 
 * Accepts user prompts through a web interface.
