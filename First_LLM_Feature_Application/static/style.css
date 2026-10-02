@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.description {
+    color: #555;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.response {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-left: 4px solid #222;
+    border-radius: 6px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.response table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.response th,
+.response td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.response th {
+    background: #f1f3f5;
+    font-weight: bold;
+}
+
+.response tr:nth-child(even) {
+    background: #fafafa;
+}

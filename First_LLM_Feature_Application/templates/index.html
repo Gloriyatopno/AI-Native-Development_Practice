@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Text Assistant</h1>
+
+        <p class="description">
+            Enter a question or request and get a response from the AI.
+        </p>
+
+        <form method="POST">
+
+            <textarea
+                name="prompt"
+                rows="6"
+                placeholder="Enter your prompt here..."
+                required
+            >{{ user_prompt }}</textarea>
+
+            <button type="submit">Ask AI</button>
+
+        </form>
+
+        {% if response %}
+            <h2>AI Response</h2>
+
+            <div class="response">
+                {{ response | safe }}
+            </div>
+        {% endif %}
+
+    </div>
+
+</body>
+</html>
