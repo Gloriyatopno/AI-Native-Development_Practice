@@ -45,15 +45,17 @@ An API is a set of rules that lets different software programs talk to each othe
 
 ## 3. LangChain Model
 LangChain provides an abstraction for interacting with chat-based LLMs.
-````markdown
+
 This project uses:
 
 ```text
 ChatGroq
 Model: openai/gpt-oss-20b
 Temperature: 0.0
-The LangChain model was successfully connected to Groq and used to generate responses.
 ```
+
+The LangChain model was successfully connected to Groq and used to generate responses.
+
 ---
 
 ## 4. Prompt Templates
@@ -88,26 +90,27 @@ LLMs normally return text.
 
 For example, an LLM may return JSON-looking output as a string:
 
+```json
 {
     "gift": "True",
     "delivery_days": "2",
     "price_value": "..."
 }
+```
 This is still a string until it is parsed.
 
 LangChain's StructuredOutputParser can parse the output into a Python dictionary.
-```text
 
 Example:
-
+```text
 LLM response → StructuredOutputParser → Python dictionary
-After parsing, dictionary values can be accessed using keys such as:
-
-gift
-delivery_days
-price_value
-
 ```
+
+After parsing, dictionary values can be accessed using keys such as:
+- gift
+- delivery_days
+- price_value
+
 ---
 
 ## 6. Basic LangChain Workflow
@@ -125,12 +128,13 @@ LLM Response
 StructuredOutputParser
     ↓
 Python Dictionary
-This demonstrates how multiple LangChain components can work together.
 ```
+
+This demonstrates how multiple LangChain components can work together.
+
 ---
 
 ## 7. Direct API vs LangChain
-
 
 | Direct API | LangChain |
 |---|---|
@@ -138,27 +142,19 @@ This demonstrates how multiple LangChain components can work together.
 | API call is handled directly | Model interaction uses LangChain abstractions |
 | Output is returned as text | Output can be parsed into structured data |
 | More manual glue code | Components can be composed and reused |
-| Useful for simple requests | Useful for larger LLM workflows | |
+| Useful for simple requests | Useful for larger LLM workflows |
 
 ---
 
 ## 8. Key Learning Outcomes
 - Learned the purpose of LangChain.
-
 - Connected a Groq LLM using LangChain.
-
 - Created reusable prompt templates.
-
 - Used prompt variables such as style and text.
-
 - Reused a single prompt template for different inputs.
-
 - Used ResponseSchema and StructuredOutputParser.
-
 - Converted LLM output into a Python dictionary.
-
 - Compared direct API calls with LangChain.
-
 - Built a basic LangChain workflow.
 
 ## 9. Files in This Practice
@@ -170,7 +166,8 @@ LangChain_Fundamentals/
 ├── requirements.txt
 ├── .env
 └── .gitignore
-The .env file contains the API key and is excluded from Git using .gitignore.
+```
+
+The `.env` file contains the API key and is excluded from Git using `.gitignore`.
 
 Save it.
-```
