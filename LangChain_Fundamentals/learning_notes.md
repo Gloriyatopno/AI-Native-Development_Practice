@@ -40,18 +40,19 @@ What is an API? Explain it in one simple sentence.
 
 Response:
 An API is a set of rules that lets different software programs talk to each other.
-
+```
 ---
 
 ## 3. LangChain Model
 LangChain provides an abstraction for interacting with chat-based LLMs.
-
+````markdown
 This project uses:
-
+```text
 ChatGroq
 Model: openai/gpt-oss-20b
 Temperature: 0.0
 The LangChain model was successfully connected to Groq and used to generate responses.
+```
 ---
 ## 4. Prompt Templates
 A prompt template is a reusable prompt containing input variables.
@@ -78,7 +79,7 @@ This is more reusable than creating separate prompt strings each time.
 
 ## 5. Output Parsers
 LLMs normally return text.
-
+```text
 For example, an LLM may return JSON-looking output as a string:
 
 {
@@ -98,10 +99,12 @@ After parsing, dictionary values can be accessed using keys such as:
 gift
 delivery_days
 price_value
+
+```
 ---
 ## 6. Basic LangChain Workflow
 The practical workflow implemented in this task is:
-
+```markdown
 Input Text
     ↓
 ChatPromptTemplate
@@ -114,18 +117,19 @@ StructuredOutputParser
     ↓
 Python Dictionary
 This demonstrates how multiple LangChain components can work together.
-
+```
+---
 ## 7. Direct API vs LangChain
-
+```markdown
 | Direct API | LangChain |
 |---|---|
 | Prompt is created manually | Prompt templates are reusable |
 | API call is handled directly | Model interaction uses LangChain abstractions |
 | Output is returned as text | Output can be parsed into structured data |
 | More manual glue code | Components can be composed and reused |
-| Useful for simple requests | Useful for larger LLM workflows |
-
-
+| Useful for simple requests | Useful for larger LLM workflows | |
+```
+---
 ## 8. Key Learning Outcomes
 - Learned the purpose of LangChain.
 
@@ -146,7 +150,7 @@ This demonstrates how multiple LangChain components can work together.
 - Built a basic LangChain workflow.
 
 ## 9. Files in This Practice
-
+```text
 LangChain_Fundamentals/
 ├── langchain_fundamentals.py
 ├── learning_notes.md
@@ -155,6 +159,5 @@ LangChain_Fundamentals/
 └── .gitignore
 The .env file contains the API key and is excluded from Git using .gitignore.
 
-
 Save it.
-
+```
