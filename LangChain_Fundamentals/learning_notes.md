@@ -131,7 +131,7 @@ This demonstrates how multiple LangChain components can work together.
 
 ## 7. Direct API vs LangChain
 
-```text
+
 | Direct API | LangChain |
 |---|---|
 | Prompt is created manually | Prompt templates are reusable |
@@ -139,7 +139,7 @@ This demonstrates how multiple LangChain components can work together.
 | Output is returned as text | Output can be parsed into structured data |
 | More manual glue code | Components can be composed and reused |
 | Useful for simple requests | Useful for larger LLM workflows | |
-```
+
 ---
 
 ## 8. Key Learning Outcomes
