@@ -47,6 +47,7 @@ An API is a set of rules that lets different software programs talk to each othe
 LangChain provides an abstraction for interacting with chat-based LLMs.
 ````markdown
 This project uses:
+
 ```text
 ChatGroq
 Model: openai/gpt-oss-20b
@@ -54,15 +55,17 @@ Temperature: 0.0
 The LangChain model was successfully connected to Groq and used to generate responses.
 ```
 ---
+
 ## 4. Prompt Templates
 A prompt template is a reusable prompt containing input variables.
 
+```text
 Example:
 
 Translate the text delimited by triple backticks
 into a style that is {style}.
 
-text: ```{text}```
+text: 
 The template contains two variables:
 
 style
@@ -76,10 +79,13 @@ Translate a customer message into calm American English.
 Convert a service reply into polite English Pirate style.
 
 This is more reusable than creating separate prompt strings each time.
+```
+---
 
 ## 5. Output Parsers
 LLMs normally return text.
-```text
+
+
 For example, an LLM may return JSON-looking output as a string:
 
 {
@@ -90,6 +96,7 @@ For example, an LLM may return JSON-looking output as a string:
 This is still a string until it is parsed.
 
 LangChain's StructuredOutputParser can parse the output into a Python dictionary.
+```text
 
 Example:
 
@@ -102,9 +109,11 @@ price_value
 
 ```
 ---
+
 ## 6. Basic LangChain Workflow
 The practical workflow implemented in this task is:
-```markdown
+
+```text
 Input Text
     ↓
 ChatPromptTemplate
@@ -119,8 +128,10 @@ Python Dictionary
 This demonstrates how multiple LangChain components can work together.
 ```
 ---
+
 ## 7. Direct API vs LangChain
-```markdown
+
+```text
 | Direct API | LangChain |
 |---|---|
 | Prompt is created manually | Prompt templates are reusable |
@@ -130,6 +141,7 @@ This demonstrates how multiple LangChain components can work together.
 | Useful for simple requests | Useful for larger LLM workflows | |
 ```
 ---
+
 ## 8. Key Learning Outcomes
 - Learned the purpose of LangChain.
 
@@ -150,6 +162,7 @@ This demonstrates how multiple LangChain components can work together.
 - Built a basic LangChain workflow.
 
 ## 9. Files in This Practice
+
 ```text
 LangChain_Fundamentals/
 ├── langchain_fundamentals.py
