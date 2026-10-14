@@ -1,0 +1,31 @@
+AI Text Assistant — Application Information
+
+The AI Text Assistant is a Flask-based web application that allows users to enter questions or requests and receive AI-generated responses.
+
+The application uses the Groq API to connect to a large language model.
+
+The model used by the application is GPT-OSS-20B.
+
+The application is built using Python and Flask.
+
+The user enters a prompt through a web form.
+
+The Flask application receives the prompt and sends it to the Groq language model.
+
+The AI response is displayed on the webpage.
+
+The application supports Markdown-formatted responses, including headings, lists, bold text, and tables.
+
+API credentials are stored in an environment variable named GROQ_API_KEY.
+
+The application validates user input and rejects empty prompts.
+
+The application limits prompts to 2000 characters.
+
+The application sanitizes generated HTML before displaying the response.
+
+The application is designed as a simple AI text assistant for general question answering and text-related requests.
+
+The application can be improved in the future by adding conversation history, loading indicators, authentication, and more advanced retrieval features.
+
+Deployment uses a production WSGI server such as Gunicorn.
