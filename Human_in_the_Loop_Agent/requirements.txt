@@ -1,0 +1,6 @@
+flask
+langgraph
+langgraph-checkpoint-sqlite
+langchain-groq
+langchain-tavily
+python-dotenv
